@@ -1,1 +1,21 @@
 <p>header works! {{titulo}}</p>
+<ul>
+  <li *ngFor="let nom of nombres">
+    {{nom}}
+  </li>
+</ul>
+
+<div *ngIf="logeado else noLogeado">
+  Bienvenido
+</div>
+
+<ng-template #noLogeado>
+  Ingresa por favor
+</ng-template>
+
+<div *ngFor="let pokemon of pokemones"
+      [ngSwitch]="pokemon.name">
+    <p *ngSwitchCase="'bulbasaur'">{{pokemon.name}}</p>
+    <p *ngSwitchCase="'charmander'">{{pokemon.name}}</p>
+    <p *ngSwitchCase="'squirtle'">{{pokemon.name}}</p>
+</div>

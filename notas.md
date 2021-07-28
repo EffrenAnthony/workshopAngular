@@ -31,3 +31,11 @@ este error puede ocurrir
 ```bash
 ng g c components/header --skip-tests
 ```
+
+### Repos y endpoints
+de Bootcamp CodiGo a todo el mundo:    12:10  PM
+https://github.com/jmontes50/workshop-angular-backend
+de Bootcamp CodiGo a todo el mundo:    12:10  PM
+https://github.com/jmontes50/workshop-angular-front
+
+https://pasarela-workshop.herokuapp.com/api/v1
