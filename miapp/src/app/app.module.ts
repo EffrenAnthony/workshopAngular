@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   //Componentes
@@ -16,7 +17,8 @@ import { MainComponent } from './components/main/main.component';
   //Modulos
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   //Servicios
   providers: [],

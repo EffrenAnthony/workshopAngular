@@ -1,1 +1,16 @@
-<p>main works!</p>
+<img [src]="url" alt="foto">
+<hr>
+<!-- Two way data binding -->
+<input type="text" [(ngModel)]='tarea'>
+<button (click)="agregarTarea()">
+  Agregar Tarea
+</button>
+<p>{{tarea}}</p>
+<br>
+<ul>
+  <li *ngFor="let tar of listaTareas">
+    {{tar}}
+  </li>
+</ul>
+
+<button (click)="guardarTareas()">Guardar</button>

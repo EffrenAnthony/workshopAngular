@@ -15,7 +15,8 @@
 
 <div *ngFor="let pokemon of pokemones"
       [ngSwitch]="pokemon.name">
-    <p *ngSwitchCase="'bulbasaur'">{{pokemon.name}}</p>
-    <p *ngSwitchCase="'charmander'">{{pokemon.name}}</p>
-    <p *ngSwitchCase="'squirtle'">{{pokemon.name}}</p>
+    <!-- tiene que ir entre comillas el caso de ngSwitchCase sino va a pensar que es una variable -->
+    <p *ngSwitchCase="'bulbasaur'" style="background-color: rgb(0, 255, 149);">{{pokemon.name}}</p>
+    <p *ngSwitchCase="'charmander'" style="background-color: rgb(255, 0, 106);">{{pokemon.name}}</p>
+    <p *ngSwitchCase="'ivysaur'" style="background-color: rgb(0, 255, 170);">{{pokemon.name}}</p>
 </div>
